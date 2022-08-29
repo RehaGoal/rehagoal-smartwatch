@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="exec_timer_layout_paddingTop">25dp</dimen>
+    <dimen name="overview_list_entry_paddingBottomTop">25dp</dimen>
+    <dimen name="overview_recyclerview_marginTop">36dp</dimen>
+    <dimen name="overview_recyclerview_marginBottom">22dp</dimen>
+    <dimen name="loading_bar_text_marginStartEnd">22dp</dimen>
+
+    <dimen name="exec_task_container_paddingTop">25dp</dimen>
+    <dimen name="exec_task_container_paddingBottom">35dp</dimen>
+</resources>

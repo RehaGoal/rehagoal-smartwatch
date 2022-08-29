@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/alertDialogContent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/action_item_background"
+        android:elevation="0dp"
+        android:scaleType="centerCrop"
+        android:src="@android:drawable/stat_notify_sync" />
+
+    <TextView
+        android:id="@+id/alertDialogText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:paddingTop="5dp"
+        android:text="@string/main_retry_request_text"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.SearchResult.Subtitle" />
+
+</LinearLayout>

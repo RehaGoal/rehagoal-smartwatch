@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/settings_category_disabilities">
+
+        <!-- TODO: ref key to strings, than use it -->
+        <SwitchPreference android:key="@string/settings_key_tts"
+            android:title="@string/settings_switch_tts_title"
+            android:summary="@string/settings_switch_tts_sum"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+</PreferenceScreen>

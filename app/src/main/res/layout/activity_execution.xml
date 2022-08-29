@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.wearable.view.drawer.WearableDrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="de.rehagoal.rehagoalwebapp.ExecutionActivity"
+    tools:deviceIds="wear">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/exec_task_container_paddingBottom">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/exec_task_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:longClickable="true"
+                android:gravity="top|center"
+                android:textColor="@color/light_grey"
+                android:textSize="24sp"
+                app:layout_box="all"
+                android:paddingTop="@dimen/exec_task_container_paddingTop"
+                android:paddingLeft="@dimen/loading_bar_text_marginStartEnd"
+                android:paddingRight="@dimen/loading_bar_text_marginStartEnd"/>
+
+            <Chronometer
+                android:id="@+id/exec_task_timer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:paddingTop="@dimen/exec_timer_layout_paddingTop"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/taskLoadingBar"
+                style="@android:style/Widget.DeviceDefault.ProgressBar.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminate="true"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/taskLoadingText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:paddingEnd="@dimen/loading_bar_text_marginStartEnd"
+                android:paddingStart="@dimen/loading_bar_text_marginStartEnd"
+                android:text="@string/exec_task_loading_bar_text"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.wearable.view.drawer.WearableActionDrawer
+        android:id="@+id/exec_action_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:show_overflow_in_peek="true"/>
+
+
+</android.support.wearable.view.drawer.WearableDrawerLayout>

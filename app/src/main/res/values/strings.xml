@@ -1,0 +1,49 @@
+<resources>
+    <!-- General -->
+    <string name="app_name">RehaGoal-Smartwatch</string>
+
+    <!-- API -->
+    <string name="rehagoal_api_check" formatted="false">received: %d, but this version is %d</string>
+    <string name="rehagoal_api_event_invalidResponse">received an unknown response</string>
+    <string name="rehagoal_api_event_uri" formatted="false">URI was: %s</string>
+    <string name="rehagoal_api_event_type" formatted="false">TYPE was: %d</string>
+    <string name="rehagoal_api_event_data" formatted="false">DATA was: %s</string>
+
+    <!-- Main Activity UI-->
+    <string name="list_loading_bar_text">Lade Daten von RehaGoal-App…</string>
+    <string name="main_outdated_dialog_title">Achtung</string>
+    <string name="main_outdated_dialog_text">Veralteter Client, bitte aktualisieren!</string>
+    <string name="main_retry_request_title">Zeitüberschreitung</string>
+    <string name="main_retry_request_text">Wiederholen</string>
+
+    <!-- Menu Eintraege -->
+    <string name="nav_workflow_title">Workflows</string>
+    <string name="nav_settings_title">Einstellungen</string>
+
+    <!-- Settings -->
+    <string name="settings_key_tts">setting_tts</string>
+    <string name="settings_category_disabilities">Barierefreiheit</string>
+    <string name="settings_switch_tts_title">Text-zu-Sprache</string>
+    <string name="settings_switch_tts_sum">Aufgabentexte werden automatisch vorgelesen</string>
+
+    <!-- Execution -->
+    <string name="exec_action_drawer_title">Aktion wählen</string>
+    <string name="exec_action_drawer_ok">OK</string>
+    <string name="exec_action_drawer_yes">Ja</string>
+    <string name="exec_action_drawer_no">Nein</string>
+    <string name="exec_task_parallel_todo" formatted="false">%s (noch %d von %d)</string>
+    <string name="exec_task_confirmation" formatted="false">%s erledigt.</string>
+    <string name="exec_task_loading_bar_text">Empfange Aufgabe…</string>
+    <string name="exec_workflow_finished_success">Workflow abgeschlossen.</string>
+    <string name="exec_workflow_finished_failure">Workflow abgebrochen.</string>
+    <string name="exec_workflow_notification">Erinnerung</string>
+    <string name="exec_action_dismiss_title">Achtung</string>
+    <string name="exec_action_dismiss_warning">Sie sind dabei die Ausführung abzubrechen! Wirklich verlassen?</string>
+    <string name="exec_action_dismiss_cancel">Zurück</string>
+    <string name="exec_action_dismiss_confirm">Bestätigen</string>
+
+    <!-- TTS -->
+    <string name="tts_action_drawer_options">Möglichkeiten:</string>
+    <string name="tts_loading_language_not_supported">Sprache wird nicht unterstützt.</string>
+    <string name="tts_loading_failed">TTS konnte nicht geladen werden!</string>
+</resources>
